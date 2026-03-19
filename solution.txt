@@ -16,9 +16,9 @@ End
 And a written explanation of your solution
 
 This solution uses a nested loop approach to generate all possible consecutive substrings from a given string. It begins by creating an
-empty array called substrings. The outer loop determines where each substring begins. The inner loop chooses where the substring ends. 
-It then takes the two positions and gives every possible consecutive substring and pushes those results to the empty array. After that 
-it returns the updated array with all substrings present. 
+empty array called substrings. The outer loop determines where each substring begins. The inner loop determins where the substring ends. 
+The function then takes the two positions and extracts every possible consecutive substring and pushes those results to the empty array.
+After all substrings have been collected and pushed into the array, the function returns the completed array.
 
 Big O Time Complexity
 
