@@ -1,25 +1,26 @@
 Please add your pseudocode to this file
--start
 
--create empty array
+Start
 
--loop through string using each index as starting position
-    -loop from the next position up to the length of the array up to the end position
-        -get the consecutive substring from start position to end position
-        -push the substring to the substrings array
+Create empty array called substrings
 
--return the substrings array
+Loop through string using each index as starting position
+    Loop from the next position up to the length of the array up to the end position
+        Get the consecutive substring from start position to end position
+        Push the substring to the substrings array
 
--end
+Return the substrings array
+
+End
 
 And a written explanation of your solution
 
-The solution provides every possible substring from a given string by initially creating an empty array called substrings.
-The outer loop determines where each substring begins. The inner loop chooses where the substring ends. It then takes the two positions
-and gives every possible consecutive substring and pushes those results to the empty array. After that it returns the updated array
-with all substrings present. 
+This solution uses a nested loop approach to generate all possible consecutive substrings from a given string. It begins by creating an
+empty array called substrings. The outer loop determines where each substring begins. The inner loop chooses where the substring ends. 
+It then takes the two positions and gives every possible consecutive substring and pushes those results to the empty array. After that 
+it returns the updated array with all substrings present. 
 
 Big O Time Complexity
 
-The time complexity of this solution is O(n²) due to the use nested loops to examine every possible starting and ending position 
+The worst-case time complexity of this solution is O(n²) due to the use of nested loops to examine every possible starting and ending position 
 in the string.
