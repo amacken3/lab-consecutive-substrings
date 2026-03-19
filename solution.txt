@@ -1,2 +1,25 @@
 Please add your pseudocode to this file
+-start
+
+-create empty array
+
+-loop through string using each index as starting position
+    -loop from the next position up to the length of the array up to the end position
+        -get the consecutive substring from start position to end position
+        -push the substring to the substrings array
+
+-return the substrings array
+
+-end
+
 And a written explanation of your solution
+
+The solution provides every possible substring from a given string by initially creating an empty array called substrings.
+The outer loop determines where each substring begins. The inner loop chooses where the substring ends. It then takes the two positions
+and gives every possible consecutive substring and pushes those results to the empty array. After that it returns the updated array
+with all substrings present. 
+
+Big O Time Complexity
+
+The time complexity of this solution is O(n²) due to the use nested loops to examine every possible starting and ending position 
+in the string.
